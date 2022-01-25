@@ -1,0 +1,26 @@
+{
+  "svc": {
+    "kernel": ["linear", "rbf", "sigmoid", "poly"],
+    "degree": [3, 4, 5, 7],
+    "gamma": ["auto", "scale"],
+    "coef0": [1.0, 3.0, 5, 10, 0.1, 0.001],
+    "decision_function_shape": ["ovo", "ovr"]
+  },
+  "random_forest":
+    {
+      "max_depth": [100, 1000],
+      "n_estimators": [100, 1000],
+      "criterion": ["entropy", "gini"],
+      "n_jobs": [7]
+    },
+  "multinomial_nb": {
+    "alpha": [0, 1, 0.5, 3],
+    "fit_prior": [true, false]
+  },
+  "adaboost": {
+    "n_estimators": [100, 1000],
+    "learning_rate": [0.1, 0.5, 1, 1.5, 2],
+    "algorithm": ["SAMME", "SAMME.R"]
+  }
+
+}
